@@ -10,10 +10,10 @@
     <header>
         <h1>HTML Tags</h1>
         <p>HTML Tags are the building blocks of HTML documents. With HTML tags, you can create a simple web page.</p>
+        <hr>
     </header>
-    <hr>
     <main>
-        <section>
+        <section class="block-inline">
             <h2>🧱 Block-Level vs. Inline Elements</h2>
             <h3>Block-Level Elements</h3>
             <p>These elements start on a new line and take up the full width of the page.</p>
@@ -31,7 +31,7 @@
                 <li><strong>strong</strong></li>
             </ol>
         </section>
-        <section>
+        <section class="semantic">
             <h2>🏷️ Structural & Semantic Elements</h2>
             <p>These tags tell search engines and browsers exactly what kind of content sits inside them, which heavily boosts SEO and digital accessibility.</p>
             <ul>
@@ -44,14 +44,20 @@
             </ul>
         </section>
         <hr>
-        <section>
+        <section class="form">
             <h2>📥 Form & Interactive Elements</h2>
             <p>Used to gather user input and data.</p>
             <form action="">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter Your Name"> <br>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Enter Your Email"> <br><br>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email"> <br>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number"> <br>
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" id="gender" value="male"> Male
+                <input type="radio" name="gender" id="gender" value="female"> Female
+                 <br><br>
                 <button type="submit">Submit</button>
             </form>
         </section>

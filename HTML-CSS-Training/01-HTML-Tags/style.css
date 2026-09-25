@@ -1,0 +1,62 @@
+*{
+    background-color: #FFFFFF;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+header, main, footer{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+h1{
+    font-size: 2.5rem;
+    color: #284B63;
+    text-align: center;
+    margin-bottom: 4px;
+}
+header p{
+    text-align: center;
+    margin-bottom: 26px;
+    color: #353535;
+    font-size: 1rem;
+}
+hr{
+    border: none;
+    border-top: 1.5px solid #284B63;
+}
+h2{
+    color: #284B63;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+h3{
+    margin-bottom: 0px;
+}
+section{
+    margin-top: 32px;
+}
+.block-inline p{
+    color: #353535;
+    font-size: 1rem;
+}
+.semantic{
+    margin-bottom: 36px;
+}
+.semantic p{
+    color: #353535;
+    font-size: 1rem;
+}
+.semantic ul p{
+    font-size: 0.9rem;
+    margin-left: 15px;
+}
+.form p{
+    color: #353535;
+    font-size: 1rem;
+}
+
