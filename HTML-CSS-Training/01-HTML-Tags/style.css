@@ -50,13 +50,152 @@ section{
 .semantic p{
     color: #353535;
     font-size: 1rem;
+    margin-bottom: 3rem;
 }
 .semantic ul p{
     font-size: 0.9rem;
     margin-left: 15px;
 }
-.form p{
+.form-section p{
+    color: #353535;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+.form-box{  
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #284B63;
+    border-radius: 10px;
+}
+.form-box div{
+    margin-bottom: 20px;
+}
+.form-box label{
+    display: block;
+    margin-bottom: 5px;
+    color: #353535;
+}
+#name, #password, #email, #phone{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #284B63;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+.form-box button{
+    width: 100%;
+    padding: 10px;
+    background-color: #284B63;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.form-box button:hover{
+    background-color: #3c6e71;
+}
+.table-section{
+    margin-bottom: 36px;
+}
+.table-section p{
+    color: #353535;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+.table-box{
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #284B63;
+    border-radius: 10px;
+}
+.table-box table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-box th, .table-box td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #284B63;
+}
+.media-section{
+    margin-bottom: 36px;
+}
+.media-section p{
+    color: #353535;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+.media-section img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+}
+.navigation-section{
+    margin-bottom: 36px;
+}
+.navigation-section p{
+    color: #353535;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+.navigation-section a{
+    text-decoration: none;
+    color: #284B63;
+}
+.navigation-section a:hover{
+    text-decoration: underline;
+}
+.sticky-icon{
+    position: fixed;
+    top: 0;
+    text-align: center;
+    background-color: #284B63;
+    padding: 10px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    
+}
+.sticky-icon a{
+    text-decoration: none;
+    
+    font-size: 1rem;
+}
+.sticky-icon a:hover{
+    text-decoration: underline;
+}
+footer{
+    margin-bottom: 36px;
+}
+footer p{
+    text-align: center;
+    margin-bottom: 26px;
     color: #353535;
     font-size: 1rem;
 }
+.about-page{
+    margin-bottom: 36px;
+    text-align: center;
+}
+.about-page p{
+    color: #353535;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.about-page a{
+    text-decoration: none;
+    color: #284B63;
+}
+.about-page a:hover{
+    text-decoration: underline;
+}
+
 

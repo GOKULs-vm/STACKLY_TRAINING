@@ -44,57 +44,83 @@
             </ul>
         </section>
         <hr>
-        <section class="form">
+        <section class="form-section">
             <h2>📥 Form & Interactive Elements</h2>
-            <p>Used to gather user input and data.</p>
-            <form action="">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder="Enter Your Name"> <br>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Enter Your Email"> <br>
-                <label for="phone">Phone</label>
-                <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number"> <br>
-                <label for="gender">Gender</label>
-                <input type="radio" name="gender" id="gender" value="male"> Male
-                <input type="radio" name="gender" id="gender" value="female"> Female
-                 <br><br>
+            <p>Used to gather user input and data from the user and send it to a server for processing or saving data in a database.</p>
+            <form action="" class="form-box">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                </div> 
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number">
+                </div>
+                <div>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender" id="gender" value="male"> Male
+                    <input type="radio" name="gender" id="gender" value="female"> Female
+                </div> 
                 <button type="submit">Submit</button>
             </form>
         </section>
-        <section>
+        <section class="table-section">
             <h2>📈 Table Elements</h2>
-            <p>Used to display tabular data.</p>
-            <table border="1">
+            <p>Used to display tabular data like a spreadsheet or database results in HTML documents.</p>
+            <table border="1" cellpadding="10" cellspacing="0" width="100%" class="table-box">
                 <tr>
                     <th>First Name</th>
                     <th>Last Name</th>
+                    <th>Age</th>
+                    <th>City</th>
                 </tr>
                 <tr>
                     <td>John</td>
                     <td>Doe</td>
+                    <td>35</td>
+                    <td>New York</td>
                 </tr>
                 <tr>
                     <td>Jane</td>
                     <td>Doe</td>
+                    <td>30</td>
+                    <td>Los Angeles</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>Smith</td>
+                    <td>40</td>
+                    <td>Chicago</td>
                 </tr>
             </table>
         </section>
         <hr>
-        <section>
+        <section class="media-section">
             <h2>🖼️ Multimedia Elements</h2>
-            <p>Introduced heavily in HTML5 to support rich media seamlessly without third-party tools.</p>
-            <img src="https://picsum.photos/id/16/200/200" alt="Lake">
+            <p>Introduced heavily in HTML5 to support rich media seamlessly without third-party tools or plugins such as Flash.</p>
+            <img src="https://picsum.photos/id/16/300/300" alt="Lake">
         </section>
-        <section>
+        <section class="navigation-section">
             <h2>🔗 Navigation & Hypertext Elements</h2>
-            <p>The backbone of the "Hypertext" concept.</p>
-            <a href="./about.html" target="_blank" rel="noopener noreferrer">About</a>
+            <p>The backbone of the web. They allow users to navigate between different pages and resources on a website.</p>
+            <p>Click <a href="./about.html" target="_blank" rel="noopener noreferrer">here</a> to know more about us</p>
+            <div class="sticky-icon">
+                <a href="./about.html" target="_blank" rel="noopener noreferrer">About</a>
+            </div>
         </section>
         <hr>
     </main>
     <footer>
-        <center><p>Copyright &copy; Stackly Training 2026</p></center>
-        <center><p>Gokul.S All rights reserved.</p></center>
+        <p>Copyright &copy; Stackly Training 2026</p>
+        <p>Gokul.S All rights reserved.</p>
     </footer>
 </body>
 </html>
