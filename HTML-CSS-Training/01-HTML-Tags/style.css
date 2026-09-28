@@ -37,12 +37,55 @@ h2{
 h3{
     margin-bottom: 0px;
 }
+h4{
+    color: #353535;
+}
 section{
     margin-top: 32px;
+}
+.block-inline{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 5rem;
 }
 .block-inline p{
     color: #353535;
     font-size: 1rem;
+}
+.blin ul{
+   margin-bottom: 3rem;
+}
+.blin-ex{
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #284B63;
+    border-radius: 10px;
+}
+.blin-ex p{
+    color: #353535;
+    font-size: 1rem;
+    border: 1px solid #e63946;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+.inin ol{
+    margin-bottom: 3rem;
+}
+.inin-ex{
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #284B63;
+    border-radius: 10px;
+}
+.inin-ex span{
+    color: #353535;
+    font-size: 1rem;
+    border: 1px solid #e63946;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
 }
 .semantic{
     margin-bottom: 36px;
@@ -55,6 +98,72 @@ section{
 .semantic ul p{
     font-size: 0.9rem;
     margin-left: 15px;
+}
+.sem-ex{
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+.sem-ex p{
+    color: #353535;
+    font-size: 1rem;
+    
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+.sem-ex nav{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 1px solid #e63946;
+    border-radius: 10px;
+    padding: 15px;
+}
+.sem-ex nav span{
+    position: absolute;
+    right: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #353535;
+    font-size: 0.9rem;
+    border: 1px solid #457b9d;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.sem-ex main{
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #e63946;
+    border-radius: 10px;
+    padding: 15px;
+}
+.sem-ex article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 1px solid #284b63;
+    border-radius: 10px;
+    padding: 15px;
+}
+.sem-ex main span{
+    position: absolute;
+    right: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #353535;
+    font-size: 0.9rem;
+    border: 1px solid #457b9d;
+    border-radius: 10px;
+    padding: 5px;
+}
+.form-section{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .form-section p{
     color: #353535;
@@ -121,7 +230,8 @@ section{
     border-bottom: 1px solid #284B63;
 }
 .media-section{
-    margin-bottom: 36px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .media-section p{
     color: #353535;
@@ -155,21 +265,42 @@ section{
 }
 .sticky-icon{
     position: fixed;
-    top: 0;
-    text-align: center;
-    background-color: #284B63;
-    padding: 10px;
-    border-radius: 50%;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #284B63, #3c6e71);
+    padding: 14px 20px;
+    border-radius: 999px;
     color: #FFFFFF;
-    
+    box-shadow: 0 10px 25px rgba(40, 75, 99, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    z-index: 1000;
+}
+.sticky-icon:hover,
+.sticky-icon:focus-within{
+    transform: translateY(-50%) scale(1.06);
+    box-shadow: 0 14px 30px rgba(40, 75, 99, 0.4);
+    background: linear-gradient(135deg, #1d3b52, #2f5d6d);
 }
 .sticky-icon a{
     text-decoration: none;
-    
     font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    background: linear-gradient(135deg, #284B63, #3c6e71);
+    color: #FFFFFF;
+    transition: opacity 0.2s ease, text-shadow 0.2s ease;
 }
-.sticky-icon a:hover{
-    text-decoration: underline;
+.sticky-icon a:hover,
+.sticky-icon a:focus{
+    text-decoration: none;
+    opacity: 0.9;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    outline: none;
 }
 footer{
     margin-bottom: 36px;
