@@ -70,7 +70,7 @@ header button{
     color: #FFFFFF;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     letter-spacing: 0.1rem;
 }
 header button:hover{
@@ -82,7 +82,7 @@ main .hero{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem auto;
+    margin: 5rem auto;
     padding: 0 1rem;
     max-width: 85rem;
 }
@@ -101,26 +101,17 @@ main .hero .hero-l::before{
     content: '';
     position: absolute;
     z-index: 1;
-  
-  /* Size of the sun structure */
     width: 250px;
     height: 250px;
-  
-  /* Creates a warm, soft solar gradient fading out to transparent */
     background: radial-gradient(
     circle, 
-    rgba(255, 223, 133, 0.4) 0%,   /* Warm golden center (low opacity) */
-    rgba(255, 243, 212, 0.2) 40%,  /* Soft morning cream outer ring */
-    rgba(255, 255, 255, 0) 70%     /* Completely fades into your white background */
+    rgba(255, 223, 133, 0.4) 0%,   
+    rgba(255, 243, 212, 0.2) 40%,  
+    rgba(255, 255, 255, 0) 70%     
   );
-  
-  /* Extra feathering to remove hard edges and make it a pure glow */
     filter: blur(20px); 
-  
-  /* Triggers the smooth, slow movement */
-    animation: lazySunMove 20s ease-in-out infinite alternate;
+    animation: lazySunMove 5s ease-in-out infinite alternate;
 }
-/* 🔄 The Lazy Sun Movement Track */
 @keyframes lazySunMove {
   0% {
     /* Starts near the top left */
@@ -133,7 +124,7 @@ main .hero .hero-l::before{
     /* Drifts down towards the center-right */
     top: 40%;
     left: 50%;
-    transform: scale(1.2); /* Gently swells like warmth hitting the garden */
+    transform: scale(1.2); 
     opacity: 0.9;
   }
   100% {
@@ -165,7 +156,7 @@ main .hero .hero-l .hl-inner button{
     color: #FFFFFF;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     letter-spacing: 0.1rem;
 }
 main .hero .hero-l .hl-inner button:hover{
@@ -184,3 +175,80 @@ main .hero .hero-r img{
     object-fit: cover;
     object-position: center;
 }
+.services-section {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+.services-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #353535;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+.service-row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 80px;
+  position: relative;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: transparent;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.service-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.service-img-col, .service-text-col {
+  flex: 1;
+}
+.circle-image-wrapper {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+  transition: transform 0.5s ease;
+}
+.circle-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.service-text-col h3 {
+  font-size: 1.8rem;
+  color: #2c3e2e; 
+  margin-bottom: 15px;
+}
+.service-text-col p {
+  font-size: 1rem;
+  color: #556b5a; 
+  line-height: 1.6;
+}
+.service-row:hover {
+  box-shadow: 
+    0 0 15px 2px rgba(212, 175, 55, 0.15),   
+    0 0 30px 6px rgba(163, 184, 153, 0.1),   
+    0 0 45px 12px rgba(255, 255, 255, 0.8); 
+  background-color: rgba(253, 254, 252, 0.6); 
+  transform: translateY(-4px);
+}
+.service-row:hover .circle-image-wrapper {
+  transform: scale(1.03);
+}
+@media (max-width: 768px) {
+  .service-row, .service-row:nth-child(even) {
+    flex-direction: column; 
+    text-align: center;
+    gap: 25px;
+    padding: 20px;
+  }
+  .circle-image-wrapper {
+    width: 220px;
+    height: 220px;
+  }
+}
+
