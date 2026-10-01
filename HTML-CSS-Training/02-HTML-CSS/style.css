@@ -85,41 +85,79 @@ main .hero{
     margin: 1rem auto;
     padding: 0 1rem;
     max-width: 85rem;
-    background: linear-gradient(135deg, #ffffff 40%, #f0f5ec 70%, #e6efe0 100%);
-    background-size: 200% 200%;
-    animation: morningDew 10s ease infinite both;
-}
-
-@keyframes morningDew {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 main .hero .hero-l{
     flex: 1;
     margin-right: 2rem;
-    
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;  
 }
-main .hero .hero-l h1{
+main .hero .hero-l .hl-inner{
+    position: relative;
+    z-index: 2;
+}
+main .hero .hero-l::before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+  
+  /* Size of the sun structure */
+    width: 250px;
+    height: 250px;
+  
+  /* Creates a warm, soft solar gradient fading out to transparent */
+    background: radial-gradient(
+    circle, 
+    rgba(255, 223, 133, 0.4) 0%,   /* Warm golden center (low opacity) */
+    rgba(255, 243, 212, 0.2) 40%,  /* Soft morning cream outer ring */
+    rgba(255, 255, 255, 0) 70%     /* Completely fades into your white background */
+  );
+  
+  /* Extra feathering to remove hard edges and make it a pure glow */
+    filter: blur(20px); 
+  
+  /* Triggers the smooth, slow movement */
+    animation: lazySunMove 20s ease-in-out infinite alternate;
+}
+/* 🔄 The Lazy Sun Movement Track */
+@keyframes lazySunMove {
+  0% {
+    /* Starts near the top left */
+    top: 10%;
+    left: 15%;
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    /* Drifts down towards the center-right */
+    top: 40%;
+    left: 50%;
+    transform: scale(1.2); /* Gently swells like warmth hitting the garden */
+    opacity: 0.9;
+  }
+  100% {
+    /* Settles softly in the lower left quadrant */
+    top: 60%;
+    left: 20%;
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+}
+main .hero .hero-l .hl-inner h1{
     font-size: 3rem;
     color: #780000;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     letter-spacing: 0.2rem;
 }
-main .hero .hero-l div{
+main .hero .hero-l .hl-inner div{
     font-size: 1.2rem;
     color: #353535;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     letter-spacing: 0.1rem;
     line-height: 2rem;
 }
-main .hero .hero-l button{
+main .hero .hero-l .hl-inner button{
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 0.5rem;
@@ -130,20 +168,19 @@ main .hero .hero-l button{
     transition: background-color 0.2s ease;
     letter-spacing: 0.1rem;
 }
-main .hero .hero-l button:hover{
+main .hero .hero-l .hl-inner button:hover{
     background-color: #780000;
     transform: translate(0, -5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 main .hero .hero-r{
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 main .hero .hero-r img{
     max-width: 100%;
     height: auto;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    object-position: center;
 }
