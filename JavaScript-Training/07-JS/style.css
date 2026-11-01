@@ -205,3 +205,105 @@
     padding: 10px;
     gap: 0.5rem;
 }
+.product-containerLoading{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0.25rem;
+    padding: 10px;
+}
+.product-cardLoading{
+    border: 1px solid #ee1192a2;
+    border-radius: 5px;
+    color: dimgrey;
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 0.5rem;
+}
+.product-containerFinal{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0.25rem;
+    padding: 10px;
+}
+.product-cardFinal{
+    border: 1px solid #1132eebe;
+    border-radius: 5px;
+    color: dimgrey;
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 0.5rem;
+}
+.mini-api{
+    margin-top: 5rem;
+    padding: 1rem;
+}
+.mini-api nav{
+    display: flex;
+    justify-content: center;
+    background-color: #fefae0;
+}
+.mini-api nav h1{
+    color: #283618;
+}
+.mini-section1{
+    padding: 1rem;
+}
+.product-containerMini{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.9rem;
+}
+.product-cardMini{
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 1.5rem;
+}
+.product-imgMini{
+    display: flex;
+    justify-content: center;
+}
+.product-cardMini img{
+    width: 200px;
+    height: 200px;
+}
+.product-cardMini h3{
+    color: #283618c0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+.product-cardMini h4{
+    color: #2c6e49;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+.product-cardMini .product-priceMini{
+    color: #8c1c13;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+.product-cardMini p{
+    color: #283618;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
