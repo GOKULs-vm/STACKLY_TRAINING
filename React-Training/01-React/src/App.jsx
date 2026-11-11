@@ -2,6 +2,7 @@ import { useState } from "react";
 import LinLout from "./components/li-co-components/LinLout";
 import PropParent from "./components/prop-components/PropParent"
 import SelfIntro from "./components/SelfIntro"
+import IDRT from "./components/idrt-components/IDRT";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -11,6 +12,7 @@ const App = () => {
       <SelfIntro />
       <PropParent />
       <LinLout isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+      <IDRT />
     </>
   )
 }
