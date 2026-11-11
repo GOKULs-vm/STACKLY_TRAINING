@@ -1,16 +1,16 @@
 import ListRen from './ListRen'
 
-const LinLout = ({ isLoggedIn }) => {
+const LinLout = ({ isLoggedIn, setIsLoggedIn }) => {
     const handleLogin = () => {
-        isLoggedIn = true;
+        setIsLoggedIn(true);
       };
 
     const handleLogout = () => {
-        isLoggedIn = false;
+        setIsLoggedIn(false);
       } 
         
   return (
-    <div className='max-w-5xl mx-auto mt-10 mb-10 px-8 py-8 flex flex-col gap-8 justify-between rounded-xl shadow-lg'>
+    <div className='max-w-5xl mx-auto mt-10 mb-10 px-8 py-8 flex flex-col gap-8 justify-between rounded-xl shadow-xl'>
       <div className='flex flex-col gap-4 justify-center items-center'>
         <h1 className='text-4xl text-center text-red-900 font-bold tracking-widest'>List & Conditional Rendering</h1>
         {
