@@ -4,6 +4,7 @@ import PropParent from "./components/prop-components/PropParent"
 import SelfIntro from "./components/SelfIntro"
 import IDRT from "./components/idrt-components/IDRT";
 import Form from "./components/form-components/Form";
+import TicTacToe from "./components/ttt-components/TicTacToe";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -15,6 +16,7 @@ const App = () => {
       <LinLout isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       <IDRT />
       <Form />
+      <TicTacToe />
     </>
   )
 }
